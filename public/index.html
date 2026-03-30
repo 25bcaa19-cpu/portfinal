@@ -1,0 +1,279 @@
+server <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Alex | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="cyber-grid"></div>
+    <div class="glitch-overlay"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <h1 class="glitch" data-text="Chris Alex">Chris Alex</h1>
+            <div class="title-underline"></div>
+        </div>
+        <p class="tagline">BCA Student <span class="separator">|</span> Aspiring Software Engineer</p>
+        <p class="scroll-text">
+            <span class="blink">&gt;</span> SCROLL_DOWN.exe <span class="blink">_</span>
+        </p>
+
+        <!-- SOCIAL ICONS (TOP) -->
+        <div class="social-icons">
+            <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chris-alex-a7b294379" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin"></i>
+                <span class="btn-glitch"></span>
+            </a>
+            <a href="https://www.instagram.com/cxrizz_alex?igsh=c2g1czAxYzZzeW9j" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+                <span class="btn-glitch"></span>
+            </a>
+            <a href="mailto:25bcaa19@kristujayanti.com" class="social-btn">
+                <i class="fas fa-envelope"></i>
+                <span class="btn-glitch"></span>
+            </a>
+        </div>
+
+        <!-- Visitor Counter -->
+        <div class="visitor-counter">
+            <span class="counter-label">&gt; VISITORS:</span>
+            <span id="visitorCount" class="counter-value">---</span>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <span class="section-tag">&lt;ABOUT&gt;</span>
+            <h2>SYSTEM.INFO</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="content-box">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">about_me.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">&gt;</span> <span class="command">cat profile.txt</span></p>
+                    <p class="output">
+                        Hello! I am <span class="highlight">Chris Alex</span>, a passionate BCA student who enjoys learning web development,
+                        building real-world projects, and exploring backend technologies.
+                    </p>
+                    <p class="output">
+                        My long-term goal is to become a professional software engineer and contribute to
+                        innovative projects in areas like <span class="highlight">Artificial Intelligence</span>, 
+                        <span class="highlight">Web Development</span>, and <span class="highlight">scalable application design</span>.
+                    </p>
+                    <p><span class="prompt">&gt;</span> <span class="blink">_</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section dark" id="skills">
+        <div class="section-header">
+            <span class="section-tag">&lt;SKILLS&gt;</span>
+            <h2>TECH.STACK</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <h3>Node.js & Express</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>SQLite Database</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-github"></i></div>
+                <h3>GitHub</h3>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="section" id="projects">
+        <div class="section-header">
+            <span class="section-tag">&lt;PROJECTS&gt;</span>
+            <h2>BUILD.LOG</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-header">
+                <span class="project-status online">LIVE</span>
+                <h3>// PORTFOLIO_WEBSITE</h3>
+            </div>
+            <p class="project-desc">
+                This portfolio project is a full-stack single-page website that connects
+                to a backend server and stores contact messages in a database.
+            </p>
+            <div class="tech-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section dark" id="contact">
+        <div class="section-header">
+            <span class="section-tag">&lt;CONTACT&gt;</span>
+            <h2>SEND.MESSAGE</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <form id="contactForm" class="cyber-form">
+            <div class="form-group">
+                <label for="name">&gt; IDENTIFIER:</label>
+                <input type="text" name="name" id="name" placeholder="John_Doe" required>
+                <span class="input-line"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">&gt; EMAIL_ADDR:</label>
+                <input type="email" name="email" id="email" placeholder="user@domain.com" required>
+                <span class="input-line"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">&gt; MESSAGE_BODY:</label>
+                <textarea name="message" id="message" placeholder="// Enter your message here..." required></textarea>
+                <span class="input-line"></span>
+            </div>
+            <button type="submit" class="cyber-btn">
+                <span class="btn-text">TRANSMIT_MESSAGE</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </form>
+        <p id="formStatus" class="form-status"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Chris Alex <span class="separator">|</span> PORTFOLIO.SYS v1.0</p>
+
+            <!-- SOCIAL ICONS (BOTTOM) -->
+            <div class="social-icons bottom-icons">
+                <a href="https://www.linkedin.com/in/chris-alex-a7b294379/" target="_blank" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/cxrizz_alex?igsh=c2g1czAxYzZzeW9j" target="_blank" class="social-btn">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:25bcaa19@kristujayanti.com" class="social-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+    </footer>
+
+    <script>
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formStatus = document.getElementById('formStatus');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            
+            submitBtn.disabled = true;
+            submitBtn.querySelector('.btn-text').textContent = 'TRANSMITTING...';
+            formStatus.textContent = '';
+            formStatus.className = 'form-status';
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+            
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    formStatus.className = 'form-status success';
+                    formStatus.textContent = '> MESSAGE_TRANSMITTED_SUCCESSFULLY';
+                    this.reset();
+                } else {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = '> ERROR: ' + result.error;
+                }
+            } catch (error) {
+                formStatus.className = 'form-status error';
+                formStatus.textContent = '> CONNECTION_FAILED: Server unreachable';
+            }
+            
+            submitBtn.disabled = false;
+            submitBtn.querySelector('.btn-text').textContent = 'TRANSMIT_MESSAGE';
+        });
+
+        // Fetch visitor count
+        async function updateVisitorCount() {
+            try {
+                const response = await fetch('/api/stats');
+                const data = await response.json();
+                if (data.success) {
+                    document.getElementById('visitorCount').textContent = data.visitors.toString().padStart(5, '0');
+                }
+            } catch (error) {
+                document.getElementById('visitorCount').textContent = 'ERROR';
+            }
+        }
+        
+        updateVisitorCount();
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
