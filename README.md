@@ -1,6 +1,6 @@
 # Chris Alex - Cyberpunk Portfolio
 
-A full-stack single-page portfolio website with a cyberpunk/techy theme.
+A full-stack single-page portfolio website.
 
 ## Project Structure
 
