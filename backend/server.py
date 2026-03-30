@@ -159,8 +159,10 @@ if __name__ == '__main__':
     print("\n" + "="*50)
     print("  CHRIS ALEX PORTFOLIO SERVER")
     print("="*50)
-    print("  Local:   http://localhost:5000")
-    print("  Admin:   http://localhost:5000/admin")
+    port = int(os.environ.get('PORT', 5000))
+    print(f"  Local:   http://localhost:{port}")
+    print(f"  Admin:   http://localhost:{port}/admin")
     print("="*50 + "\n")
-    
-    app.run(debug=True, host='0.0.0.0', port=5000)
+
+    # Use environment PORT for deployment platforms (Render, Heroku, etc.)
+    app.run(host='0.0.0.0', port=port)
